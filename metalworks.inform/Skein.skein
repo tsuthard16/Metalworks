@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x119c6220" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0x119c6220" />
+  <item nodeId="node-0x119c6220">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+metalworks
+An Interactive Fiction by Ty Suthard
+Release 1 / Serial number 140214 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Janitor&apos;s Closet
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="8">NO</temporary>
+    <children>
+      <child nodeId="node-0x119c6270" />
+    </children>
+  </item>
+  <item nodeId="node-0x119c6270">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="8">YES</temporary>
+    <children>
+      <child nodeId="node-0x119c62c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x119c62c0">
+    <command xml:space="preserve">x everything</command>
+    <result xml:space="preserve">(yourself)
+As good-looking as ever.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+  </item>
+</Skein>
