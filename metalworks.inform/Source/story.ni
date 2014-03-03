@@ -7,7 +7,6 @@ Understand "kick [something]" as kicking.
 Understand "kick down [something]" as kicking.
 Understand "break down [something]" as kicking.
 
-
 [//////////JANITOR'S CLOSET//////////]
 
 The Janitor's Closet is a room. The description is "A Janitor's closet, just roomy enough for a body to pass out comfortably in. In the corner is the usual mop, there are some crumpled papers scattered around, and there's a large shelf with what looks like lots of cleaning supplies. To your south you can see a door."
@@ -87,6 +86,7 @@ The stairwell is an open unopenable door. It is west of the Catwalk and east of 
 Using is an action applying to two things.
 Understand "use [something] with [something]" as using.
 Understand "burn [something] with [something]" as using.
+Understand "light [something] with [something]" as using.
 
 [//////////MAIN FLOOR START//////////]
 
@@ -125,11 +125,11 @@ Check using:
 
 [EXPLOSIVE BARREL PUZZLE ELEMENTS]
 
-Pouring is an action applying to one thing.
-Understand "pour [something]" as pouring.
+Pouring is an action applying to two things.
+Understand "pour [something] on [something]" as pouring.
 
-Throwing is an action applying to one thing.
-Understand "throw [something]" as throwing.
+Throwing is an action applying to two things.
+Understand "throw [something] at [something]" as throwing.
 
 Things can be destroyed or prestine. Things are usually prestine.
 
@@ -142,15 +142,53 @@ Some Propane tanks are scenery in the West floor. "Some propane tanks. It's actu
 
 The cinderblock wall is scenery in the West Floor. It is prestine. The description is "[If the cinderblock wall is prestine] A cinderblock wall. Chances are it's not the strongest, it /i/is/i/ only made out cement or something anyways.[end if][if the cinderblock wall is destroyed] A gaping whole is all that remains of the wall that was once here.[end if]"
 
+Some propane tanks are a thing in the west floor.
 
+Check throwing:
+	if the noun is blowtorch:
+		if the noun is propane tanks:
+			if the blowtorch is switched on:
+				say "woooow look at it go booom, whoohooo";
+				change cinderblock wall to destroyed.;
+				remove the blowtorch from play.;
+				remove the propane tanks from play.;
+			If the blowtorch is off:
+				say "wat r u doin m8. throwing things around like a crazy person.".
+				
+The trail of cleaning supplies is scenery. The description is "some cleaning fluid. nice and flammable."
+
+Check pouring:
+	if the noun is cleaning supplies:
+		if the noun is propane tanks:
+			say "you make a trail of what would be lighter fluid if it wasnt cleaning liquid.";
+			move trail of cleaning supplies to the west floor.
+			
+Check using:
+	if the noun is blowtorch:
+		if the noun is trail of cleaning supplies:
+			if the blowtorch is switched on:
+				say "BUUURN BUUUURN BUUUUUUUUUURN AHAHAHAHAHA".
+
+	
+Check going south:
+	if the cinderblock wall is destroyed:
+		say "you proceed to move into the rubble.";
+		move the player to the ruined room.;
+	if the cinderblock wall is prestine:
+		say "why are you trying to walk into a wall".
 [//////////WEST FLOOR END//////////]
 
 [//////////THE RUINED ROOM START//////////]
 
-The ruined room is a room.
+The ruined room is a room. It is north of the crane stairwell. "This place is ruined."
 
+The Crane Stairwell is a door. It is open and unopenable. It is South of the ruined room and North of the crane catwalk.
 
+[//////////Ruined room end//////////]
 
+[//////////crane catwalk start//////////]
+
+the crane catwalk is a room. it is south of the Crane Stairwell.
 
 
 Use no scoring.
