@@ -182,13 +182,25 @@ Check going south:
 
 The ruined room is a room. It is north of the crane stairwell. "This place is ruined."
 
-The Crane Stairwell is a door. It is open and unopenable. It is South of the ruined room and North of the crane catwalk.
+The debris is scenery in the ruined room. "There's dirt and dust and junk. you duly note that cinderblock walls are not strong enough to withstand the explosion of several propane tanks and decide that there are better building supplies for your home."
+
+The Crane Stairwell is a door. It is open and unopenable.
 
 [//////////Ruined room end//////////]
 
 [//////////crane catwalk start//////////]
 
-the crane catwalk is a room. it is south of the Crane Stairwell.
+People can be pissy or chill.
+
+the crane catwalk is a room.
+
+The dude is a man in the crane catwalk. The dude is pissy. "The dude is a dude in the dude area of the crane catwalk. he looks like a pretty decent bro.[if the dude is pissy] He looks pretty pissy.[end if]"
+
+Instead of asking dude:
+	say "GIMME A CIGARETEE YOU PERSON AJKLJKL;ZJKFKADJOFL3QI";
+	say "you reply with omg stfu you weirdo go jump in that flaming metal bucket";
+	say "the dude pushes you into a fire";
+	end the game in victory.
 
 
 Use no scoring.

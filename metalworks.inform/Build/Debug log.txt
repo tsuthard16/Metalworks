@@ -6,7 +6,7 @@ Inform called as: /Applications/Inform.app/Contents/Resources/Compilers/ni -rule
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 1579 words long.
+I've now read your source text, which is 1689 words long.
 
 
 -----------------------------------------------------
@@ -44,22 +44,49 @@ Phase VI ... Semantic analysis III
 Phase VII ... First pass through assertions
 -----------------------------------------------------
 
-        Problem C8ChalkCheese issued from Chapter 8/Make Assertions.w, line 1339
 
-          >--> The sentence 'It is South of the ruined room and North of the crane
-            catwalk' (source text, line 185) appears to say two things are the same - I
-            am reading 'It' and 'South of the ruined room' as two different things, and
-            therefore it makes no sense to say that one is the other: it would be like
-            saying that 'Aeschylus is Euripides'. It would be all right if the second
-            thing were the name of a kind, perhaps with properties: for instance
-            'Underworld is a lighted room' says that something called Underworld exists
-            and that it is a 'room', which is a kind I know about, combined with a
-            property called 'lighted' which I also know about.
+
+-----------------------------------------------------
+Phase VIII ... Second pass through assertions
+-----------------------------------------------------
 
 
 
 -----------------------------------------------------
-Phase VIII ... Compilation now complete
+Phase IX ... Making the model world
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase X ... Tables and grammar
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase XI ... Phrases and rules
+-----------------------------------------------------
+
+PHUD: <instead of asking dude>: rule attachment mode RULE_IN_RULEBOOK_RAM
+  Rule preamble: <instead of asking dude>
+  Rule parameter: <asking dude>
+  Owned by rulebook: Rulebook 21 (instead)
+  Placement: MIDDLE_PLACEMENT
+Bad action pattern: asking dude =   [Invalid]  Action: unspecified
+
+PAP failure reason: 1
+Problem C22APUnknown issued from Chapter 22/Phrase Usage.w, line 805
+
+  >--> You wrote 'Instead of asking dude' (source text, line 199), which seems
+    to introduce a rule taking effect only if the action is 'asking dude'. But
+    that did not make sense as a description of an action. I am unable to place
+    this rule into any rulebook.
+
+
+
+-----------------------------------------------------
+Phase XII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 4 files written as streams.
