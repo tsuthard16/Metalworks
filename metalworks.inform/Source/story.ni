@@ -1,4 +1,6 @@
 "metalworks" by Ty Suthard
+[//////////DEBUG COMMANDS//////////]
+Hopefully i can get a teleport command in here eventually so it's easier to test this darn thing.
 
 [//////////CUSTOM ACTIONS//////////]
 
@@ -27,7 +29,7 @@ Instead of taking the Cleaning Supplies:
 	move Cleaning Supplies to the player.;
 	move The label to the player.
 
-The Door to the Janitor's Closet is a closed lockable door. "..." It is locked and lockable. The Door to the Janitor's Closet is south of the Janitor's Closet and north of the Hallway. The description is "A pretty plain wooden door. [if the door is closed]It's locked, but it doesnt look that strong.  [end if][if the door is open] That door was no match for you in the slightest.[end if]"
+The Door to the Janitor's Closet is a closed lockable door. "..." It is locked and lockable. The Door to the Janitor's Closet is south of the Janitor's Closet and north of the Hallway. The description is "A pretty plain wooden door. [if the door is closed]It's locked, but it doesnt look that strong.[end if][if the door is open] That door was no match for you in the slightest.[end if]"
 
 After kicking the Door to the Janitor's Closet:
 	now the Door to the Janitor's Closet is open.;
@@ -87,6 +89,7 @@ Using is an action applying to two things.
 Understand "use [something] with [something]" as using.
 Understand "burn [something] with [something]" as using.
 Understand "light [something] with [something]" as using.
+Understand "use [something]" as using.
 
 [//////////MAIN FLOOR START//////////]
 
@@ -96,7 +99,7 @@ The Main Floor is a room. It is west of the stairwell.
 
 The blowtorch is a device in the main floor. "…". blowtorch is off. The description is "A blowtorch.[if the blowtorch is turned on] Presently, there are flames spewing out the top of it at over 500 degrees celsius.[end if] It can be switched on and off by a valve near the nozzle."
 
-Some cigarettes are a thing in the Main Floor. "…". The description is "A pack of 'Marble' cigarettes. Ever since they found the loophole in placing warning labels, they're now covered with the label of 'WARNING: Smoking is AWESOME.'"
+Some cigarettes are a thing in the Main Floor. "…". The description is "A pack of 'Marble' cigarettes. Ever since they found the loophole in placing warning labels, they're now covered with the label of 'WARNING: Smoking is AWESOME.'" 
 
 Instead of taking blowtorch:
 	say "[If the player is carrying the cigarettes] Slow boss catch up go fast[end if].";
@@ -116,7 +119,7 @@ Check using:
 	if the noun is cigarettes:
 		if the noun is blowtorch:
 			If the blowtorch is switched on:
-				say "yeahyeahitworks burn, burn burn";
+				say "yeahyeahitworks burn, burn burn. you can go east now.";
 			if the blowtorch is off:
 				say "you need fire to burn things.".
 			
@@ -171,11 +174,12 @@ Check using:
 
 	
 Check going south:
-	if the cinderblock wall is destroyed:
-		say "you proceed to move into the rubble.";
-		move the player to the ruined room.;
-	if the cinderblock wall is prestine:
-		say "why are you trying to walk into a wall".
+	if the player is in the west floor:
+		if the cinderblock wall is destroyed:
+			say "you proceed to move into the rubble.";
+			move the player to the ruined room.;
+		if the cinderblock wall is prestine:
+			say "why are you trying to walk into a wall".
 [//////////WEST FLOOR END//////////]
 
 [//////////THE RUINED ROOM START//////////]
@@ -184,23 +188,78 @@ The ruined room is a room. It is north of the crane stairwell. "This place is ru
 
 The debris is scenery in the ruined room. "There's dirt and dust and junk. you duly note that cinderblock walls are not strong enough to withstand the explosion of several propane tanks and decide that there are better building supplies for your home."
 
-The Crane Stairwell is a door. It is open and unopenable.
+The Crane Stairwell is a door. It is open and unopenable. It is south of the ruined room and north of the Crane Catwalk.
+
+Check going north:
+	if the player is in the ruined room:
+		say "Going back that way would only result in getting talked to by your boss.".
 
 [//////////Ruined room end//////////]
 
 [//////////crane catwalk start//////////]
 
-People can be pissy or chill.
+Mood is a kind of value. The moods are Pissy and Chill. People have mood. The mood of the Crane Operator is pissy.
 
-the crane catwalk is a room.
+Talking to is an action applying to one thing.
+Understand "talk to [something]" as talking.
 
-The dude is a man in the crane catwalk. The dude is pissy. "The dude is a dude in the dude area of the crane catwalk. he looks like a pretty decent bro.[if the dude is pissy] He looks pretty pissy.[end if]"
+the Crane Catwalk is a room. It is south of the crane stairwell.
 
-Instead of asking dude:
-	say "GIMME A CIGARETEE YOU PERSON AJKLJKL;ZJKFKADJOFL3QI";
+The Crane Operator is a man in the crane catwalk. The Crane Operator is pissy. "The dude is a dude in the dude area of the crane catwalk. he looks like a pretty decent bro.[if the mood of the Crane Operator is pissy] No, wait, he actually looks pretty pissed off about something.[end if]"
+
+[uh this was mostly testing]
+Instead of talking to the Crane Operator:
+	say "GIMME A CIGARETEE YOU AJKLJKL;ZJKFKADJOFL3QI";
 	say "you reply with omg stfu you weirdo go jump in that flaming metal bucket";
 	say "the dude pushes you into a fire";
-	end the game in victory.
+	say ".
+	..
+	…
+	….
+	…..
+	……
+	…….
+	not really though, keep playing."
 
+Some Crane Controls are scenery in the Crane Catwalk. The description is "It looks like these levers and buttons and whatnot control the huge flaming metal bucket full of molten steel."
+
+The Huge flaming bucket full of molten steel is scenery in the Crane Catwalk. The description is "WOW. You can actually feel the heat from here. The bucket is actually low enough so that you can see a window at the end of its crane pathway."
+
+The window is scenery in the crane catwalk. 
+
+Check using:
+	if the noun is Crane Controls:
+		if the mood of the Crane Operator is pissy:
+			say "The crane operator yells something incomprehensible at you about cigarettes and money and pushes you away from the controls.";
+		if the mood of the Crane operator is chill:
+			say "The crane operator is too busy smoking to care about all the safety rules you're violating right now.".
+			
+Instead of giving the cigarettes to the crane operator:
+	say "The crane operator takes your cigs and looks pretty happy now. He's too busy smoking to prevent you messing with his stuff at this point.";
+	change the mood of the crane operator to chill.;
+	remove the cigarettes from play;
+	change the description of the crane operator to "It's the crane operator. He looks pretty chill now that you've given him those cigarettes you found on the floor.".	
+
+Diving is an action applying to one thing.
+Understand "jump on [something]" as diving.
+Understand "jump through [something]" as diving.
+
+Check diving:
+	if the player is in the Crane Catwalk:
+		if the noun is Huge Flaming Bucket Full of Molten Steel:
+			say "You leap on to the lip of the bucket, the hot steel searing your metalworking clothes slightly.";
+			move player to Metal Bucket.;
+	If the player is in the Metal Bucket:
+		if the noun is Window:
+			say "You dive through the window like some action hero tailed by mercenaries, and gracefully land in a trash bin.";
+			move player to the dumpster.
+
+[//////////END CRANE CATWALK//////////]
+
+[//////////START METAL BUCKET//////////]
+
+The metal bucket is a room. The description is "You are literally standing on the rim of a huge flaming metal bucket. I hope you feel good about yourself, for this is the day that you show your boss that you can be whoever you want to be, albeit with your shoes melting and on fire. Seriously though, probably shouldn't stand up here for too much longer if you don't want your metalworking gear to fail."
+
+The dumpster is a room.
 
 Use no scoring.

@@ -5,7 +5,7 @@
     <key>0</key><dict>
         <key>Filename</key><string>/Users/tsuthard16/Desktop/Metalworks/Metalworks/metalworks.inform/Source/story.ni</string>
         <key>Line</key><integer>1</integer>
-        <key>Title</key><string>"metalworks" by Ty Suthard</string>
+        <key>Title</key><string>"metalworks" by Ty Suthard Hopefully i can get a teleport command in here eventually so it's easier to test this darn thing</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
