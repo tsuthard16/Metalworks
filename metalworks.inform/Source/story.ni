@@ -15,7 +15,6 @@ The Janitor's Closet is a room. The description is "A Janitor's closet, just roo
 
 The crumpled paper is scenery in the Janitor's Closet. The description is "Some crumpled paper. There's actually not much to say about this. It's not really that interesting."
 
-
 The Shelf is scenery in the Janitor's Closet. It is an open openable container. It is unlocked and lockable. The description is "A large handy shelf full of things. There are plenty of cleaning supplies here. "
 
 The Mop is a thing in the Janitor's Closet. "..." The description is "A mop, complete with the weird fuzzy end. You muse that 'it's like a water broom.'"
@@ -132,8 +131,12 @@ Check using:
 			
 Check going west:
 	if the player is not carrying the ashpile:
-		say "You can't head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.[if the player is carrying the cigarettes] Those cigarettes you picked up look like that could be useful…[end if]"
-	
+		say "You can't head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.[if the player is carrying the cigarettes] Those cigarettes you picked up look like that could be useful…[end if]";
+	if the player is carrying the ashpile:
+		move Boss to the Main Floor;
+		say "You manage to get out of the Main floor before the boss catches up to you, thanks to the cloud of smoke you just created.";
+		move the player to the west Floor.
+		
 Check throwing:
 	if the noun is The Mop:
 		if the noun is the boss:
@@ -153,16 +156,13 @@ Understand "throw [something] at [something]" as throwing.
 
 Things can be destroyed or prestine. Things are usually prestine.
 
-
 [//////////WEST FLOOR START//////////]
 
-The west floor is a room. it is west of the Main floor.
+The west floor is a room. It is west of the Main floor. [orly?]
 
 Some Propane tanks are scenery in the West floor. "Some propane tanks. It's actually a bit odd that we left them on the main working floor. Who knows what sort of explosive capability they have?"
 
-The cinderblock wall is scenery in the West Floor. It is prestine. The description is "[If the cinderblock wall is prestine] A cinderblock wall. Chances are it's not the strongest, it /i/is/i/ only made out cement or something anyways.[end if][if the cinderblock wall is destroyed] A gaping whole is all that remains of the wall that was once here.[end if]"
-
-Some propane tanks are a thing in the west floor.
+The cinderblock wall is scenery in the West Floor. It is prestine. The description is "[If the cinderblock wall is prestine] A cinderblock wall. Chances are it's not the strongest, it IS only made out cement or something anyways.[end if][if the cinderblock wall is destroyed] A gaping whole is all that remains of the wall that was once here.[end if]"
 
 Check throwing:
 	if the noun is blowtorch:
@@ -190,7 +190,8 @@ Check using:
 				say "BUUURN BUUUURN BUUUUUUUUUURN AHAHAHAHAHA".;
 				Change the cinderblock wall to destroyed.;
 				remove the propane tanks from play.;
-				remove the cleaning supplies from play.
+				remove the cleaning supplies from play.;
+				say "The trail of cleaning supplies burns and leads up to the propane tanks, like a fuse of sorts. They propane tanks eventually ignite, and blast a gaping hole in the cinderblock wall, leading to another room.".
 
 	
 Check going south:
@@ -198,13 +199,21 @@ Check going south:
 		if the cinderblock wall is destroyed:
 			say "you proceed to move into the rubble.";
 			move the player to the ruined room.;
+			move Boss to the West Floor.;
+			say "Your boss arrives in the West Floor to assess the havok you just caused. ";
 		if the cinderblock wall is prestine:
 			say "why are you trying to walk into a wall".
+			
+Check going west:
+	if the player is in the west floor:
+		say "Seriously, what is up with you and walking into walls" instead.
+		
+
 [//////////WEST FLOOR END//////////]
 
 [//////////THE RUINED ROOM START//////////]
 
-The ruined room is a room. It is north of the crane stairwell. "This place is ruined."
+The ruined room is a room. It is north of the crane stairwell. "This place is ruined. There's debris everywhere."
 
 The debris is scenery in the ruined room. "There's dirt and dust and junk. you duly note that cinderblock walls are not strong enough to withstand the explosion of several propane tanks and decide that there are better building supplies for your home."
 
@@ -274,8 +283,9 @@ Understand "jump through [something]" as diving.
 Check diving:
 	if the player is in the Crane Catwalk:
 		if the noun is Huge Flaming Bucket Full of Molten Steel:
-			say "You leap on to the lip of the bucket, the hot steel searing your metalworking clothes slightly.";
-			move player to Metal Bucket.;
+			if the player is wearing some Metalworking Gear:
+				say "You leap on to the lip of the bucket, the hot steel searing your metalworking clothes slightly.";
+				move player to Metal Bucket.;
 	If the player is in the Metal Bucket:
 		if the noun is Window:
 			say "You dive through the window like some action hero tailed by mercenaries, and gracefully land in a trash bin.";
