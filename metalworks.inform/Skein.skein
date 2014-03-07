@@ -10,7 +10,7 @@
 
 metalworks
 An Interactive Fiction by Ty Suthard Hopefully i can get a teleport command in here eventually so it&apos;s easier to test this darn thing
-Release 1 / Serial number 140305 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140306 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Janitor&apos;s Closet
 A Janitor&apos;s closet, just roomy enough for a body to pass out comfortably in. In the corner is the usual mop, there are some crumpled papers scattered around, and there&apos;s a large shelf with what looks like lots of cleaning supplies. To your south you can see a door.
@@ -22,7 +22,7 @@ A Janitor&apos;s closet, just roomy enough for a body to pass out comfortably in
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="20">NO</temporary>
+    <temporary score="25">NO</temporary>
     <children>
       <child nodeId="node-0x1b045a0" />
       <child nodeId="node-0x1b046f0" />
@@ -36,6 +36,7 @@ A Janitor&apos;s closet, just roomy enough for a body to pass out comfortably in
       <child nodeId="node-0x96c6460" />
       <child nodeId="node-0x1b05570" />
       <child nodeId="node-0x1b055e0" />
+      <child nodeId="node-0x13688af0" />
       <child nodeId="node-0x1bc7730" />
     </children>
   </item>
@@ -441,6 +442,73 @@ It seems to be locked.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="9">YES</temporary>
+  </item>
+  <item nodeId="node-0x13688af0">
+    <command xml:space="preserve">break down door</command>
+    <result xml:space="preserve">You give a mighty kick towards the Door and it swings open wide for you, sending a few splinters your way. You can see a hallway to your south now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="25">YES</temporary>
+    <children>
+      <child nodeId="node-0x9602ef0" />
+    </children>
+  </item>
+  <item nodeId="node-0x9602ef0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Hallway
+A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="25">YES</temporary>
+    <children>
+      <child nodeId="node-0x960e0d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x960e0d0">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="25">YES</temporary>
+    <children>
+      <child nodeId="node-0x1314cfe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1314cfe0">
+    <command xml:space="preserve">east</command>
+    <result xml:space="preserve">
+Gear Room
+This gear room would be a lot like a locker room if there were any lockers. You can see a red button in the corner of the room next to a large steel door, and some metalworking clothes in another corner. There&apos;s a sign to the south next to the steel door.
+
+A heavy, solid steel door. Unlike the door for the janitor&apos;s closet, there&apos;s no way you&apos;ll be able to kick this one down.
+
+You can also see a button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="25">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b11890" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b11890">
+    <command xml:space="preserve">take gear</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
   </item>
   <item nodeId="node-0x1b055e0">
     <command xml:space="preserve">x paper</command>

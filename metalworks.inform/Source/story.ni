@@ -61,13 +61,15 @@ Understand "20 dollars" as the $20 bill.
 
 The Gear Room is a room. It is east of the hallway. The description is "This gear room would be a lot like a locker room if there were any lockers. You can see a red button in the corner of the room next to a large steel door, and some metalworking clothes in another corner. There's a sign to the south next to the steel door."
 
-The steel door is a closed lockable door. It is locked an lockable. It is south of the Gear Room and north of the Catwalk. "A heavy, solid steel door. Unlike the door for the janitor's closet, there's no way you'll be able to kick this one down."
+The steel door is a closed lockable door. "…". It is locked and lockable. It is south of the Gear Room and north of the Catwalk. The description is "A heavy, solid steel door. Unlike the door for the janitor's closet, there's no way you'll be able to kick this one down."
 
-The button is a thing in the Gear Room. The button can be pressed.
+The button is a thing in the Gear Room. The button can be pressed. The description is "A big shiny red button next to the big steel door. I wonder what it does?"
 
 Instead of pushing the button:
 	say "With a mighty tap, you depress the red button, such that it activates a mechanism, triggering a response in an electrical system, which in return activates the motors connected to the steel door, raising said door, revealing a passage to a catwalk to your south.";
 	now the steel door is open.
+	
+Some metalworking gear are a thing in the Gear Room. The Metalworking Gear can be worn. The description is "Some heavy duty metalworking clothes, capable of keeping you cool in temperatures up to 500 degress celsius."
 
 [//////////GEAR ROOM END//////////]
 
@@ -77,9 +79,11 @@ Check going north:
 	If the player is in the catwalk:
 		say "You'd rather get out of here than retreat into the gear room." instead.
 
-The Catwalk is a room. It is south of the Steel Door.
+The Catwalk is a room. It is south of the Steel Door. "A large catwalk outside of the gear room. Unfortunately you can see your boss here, but you can also see an escape route to your west in the form of a stairwell."
 
-The stairwell is an open unopenable door. It is west of the Catwalk and east of the main floor.
+The Boss is a man in the Catwalk. "Oh crap, it's your boss. The last thing you want to do is get talked to by him. You'd better get out of here."
+
+The stairwell is an open unopenable door. "…". It is west of the Catwalk and east of the main floor. The description is "Some plain old metal stairs."
 
 [//////////CATWALK END//////////]
 
@@ -113,17 +117,30 @@ Instead of taking the cigarettes:
 
 Check going east:
 	If player is in Main Floor:
-		say "you don't really feel like going that way right now." instead.
+		say "Dude, your boss is literally climbing down the stairs to talk to you, do you actually want to talk to him?" instead.
+
+The ashpile is a thing. The description is "Some ashes from your burning of those cigarrettes. You still have plenty of cigarrettes leftover though."
 
 Check using:
 	if the noun is cigarettes:
 		if the noun is blowtorch:
 			If the blowtorch is switched on:
-				say "yeahyeahitworks burn, burn burn. you can go east now.";
+				say "You create a large plume of smoke, distracting your boss and masking your location temporarily. You can use this newfound time to escape to your west.";
+				move the ashpile to the player.;
 			if the blowtorch is off:
-				say "you need fire to burn things.".
+				say "You need to turn actually turn on the blowtorch to burn things.".
 			
+Check going west:
+	if the player is not carrying the ashpile:
+		say "You can't head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.[if the player is carrying the cigarettes] Those cigarettes you picked up look like that could be useful…[end if]"
 	
+Check throwing:
+	if the noun is The Mop:
+		if the noun is the boss:
+			say "You valiantly throw your mop at your boss to have it fall several inches short. He just looks at you sort of confused. You'd better find a better way to distract your boss.".
+
+Understand "cigs" as cigarettes.
+
 [//////////MAIN FLOOR END//////////]
 
 [EXPLOSIVE BARREL PUZZLE ELEMENTS]
@@ -170,7 +187,10 @@ Check using:
 	if the noun is blowtorch:
 		if the noun is trail of cleaning supplies:
 			if the blowtorch is switched on:
-				say "BUUURN BUUUURN BUUUUUUUUUURN AHAHAHAHAHA".
+				say "BUUURN BUUUURN BUUUUUUUUUURN AHAHAHAHAHA".;
+				Change the cinderblock wall to destroyed.;
+				remove the propane tanks from play.;
+				remove the cleaning supplies from play.
 
 	
 Check going south:
@@ -205,12 +225,12 @@ Understand "talk to [something]" as talking.
 
 the Crane Catwalk is a room. It is south of the crane stairwell.
 
-The Crane Operator is a man in the crane catwalk. The Crane Operator is pissy. "The dude is a dude in the dude area of the crane catwalk. he looks like a pretty decent bro.[if the mood of the Crane Operator is pissy] No, wait, he actually looks pretty pissed off about something.[end if]"
+The Crane Operator is a man in the crane catwalk. The Crane Operator is pissy. "The dude is a dude in the dude area of the crane catwalk. he looks like a pretty decent bro.[if the mood of the Crane Operator is pissy] No, wait, he actually looks pretty stingy about something.[end if]"
 
 [uh this was mostly testing]
 Instead of talking to the Crane Operator:
-	say "GIMME A CIGARETEE YOU AJKLJKL;ZJKFKADJOFL3QI";
-	say "you reply with omg stfu you weirdo go jump in that flaming metal bucket";
+	say "gimme some cigarettes or some money to buy some cigarettes";
+	say "why dont you ask nicely and go jump in that flaming metal bucket";
 	say "the dude pushes you into a fire";
 	say ".
 	..
@@ -225,7 +245,7 @@ Some Crane Controls are scenery in the Crane Catwalk. The description is "It loo
 
 The Huge flaming bucket full of molten steel is scenery in the Crane Catwalk. The description is "WOW. You can actually feel the heat from here. The bucket is actually low enough so that you can see a window at the end of its crane pathway."
 
-The window is scenery in the crane catwalk. 
+The window is scenery in the crane catwalk. "You can see a large window across from the catwalk. It seems as though the metal bucket moves near it when in operation."
 
 Check using:
 	if the noun is Crane Controls:
@@ -239,6 +259,13 @@ Instead of giving the cigarettes to the crane operator:
 	change the mood of the crane operator to chill.;
 	remove the cigarettes from play;
 	change the description of the crane operator to "It's the crane operator. He looks pretty chill now that you've given him those cigarettes you found on the floor.".	
+
+Instead of giving the $20 bill to the crane operator:
+	say "The crane operator graciously takes your money out of your hands and looks pretty happy now. He agrees to let you use the crane controls.";
+	change the mood of the crane operator to chill.;
+	remove the $20 bill from play;
+	change the description of the crane operator to "It's the crane operator. He giggling like a schoolgirl now that he's got that $20 bill in his hands.".
+	
 
 Diving is an action applying to one thing.
 Understand "jump on [something]" as diving.
@@ -258,8 +285,16 @@ Check diving:
 
 [//////////START METAL BUCKET//////////]
 
-The metal bucket is a room. The description is "You are literally standing on the rim of a huge flaming metal bucket. I hope you feel good about yourself, for this is the day that you show your boss that you can be whoever you want to be, albeit with your shoes melting and on fire. Seriously though, probably shouldn't stand up here for too much longer if you don't want your metalworking gear to fail."
+The metal bucket is a room. The description is "You are literally standing on the rim of a huge flaming metal bucket. I hope you feel good about yourself, for this is the day that you show your boss that you can be whoever you want to be, albeit with your shoes melting and on fire. Seriously though, you probably shouldn't stand up here for too much longer if you don't want your metalworking gear to fail. Luckily, the crane seems to be moving your bucket nearer to the window, but before you take your leap of faith, you figure you should say some last words to your boss."
 
-The dumpster is a room.
+The dumpster is a room. "A wonderful dumpster. It looks like you successfully made it out of the steel mill without letting your boss talk to you. Oh look, a rat."
+
+The rat is a thing in the dumpster. "…". The description is "A rat. He seems pretty content with you sitting there. He probably wouldn't mind to much if you picked him up actually."
 
 Use no scoring.
+
+An every turn rule:
+if the player is carrying the rat,
+end the game in victory.
+
+
