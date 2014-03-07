@@ -97,8 +97,14 @@ Instead of pushing the button:
 	say "With a mighty tap, you depress the red button, such that it activates a mechanism, triggering a response in an electrical system, which in return activates the motors connected to the steel door, raising said door, revealing a passage to a catwalk to your south.";
 	now the steel door is open.
 	
+Understand "red button" as button.
+	
 Some metalworking gear are a thing in the Gear Room. The Metalworking Gear can be worn. The description is "Some heavy duty metalworking clothes, capable of keeping you cool in temperatures up to 500 degress celsius."
 
+Check going south:
+	if the player is in the gear room:
+		if the player is not carrying the metalworking gear:
+			say "You should take that metalworking gear before you leave here first." instead.
 [//////////GEAR ROOM END//////////]
 
 [//////////CATWALK START//////////]
@@ -123,15 +129,18 @@ Understand "burn [something] with [something]" as using.
 Understand "light [something] with [something]" as using.
 Understand "use [something]" as using.
 
+
 [//////////MAIN FLOOR START//////////]
 
 Things can be turned on or off. Things are usually off.
 
-The Main Floor is a room. It is west of the stairwell.
+The Main Floor is a room. It is west of the stairwell. The description is "The main metalworking floor. In here you can see a few things lying on the floor, in the form of a pack of cigarettes and a blowtorch. To your west is another part of the floor."
 
 The blowtorch is a device in the main floor. "…". blowtorch is off. The description is "A blowtorch.[if the blowtorch is turned on] Presently, there are flames spewing out the top of it at over 500 degrees celsius.[end if] It can be switched on and off by a valve near the nozzle."
 
 Some cigarettes are a thing in the Main Floor. "…". The description is "A pack of 'Marble' cigarettes. Ever since they found the loophole in placing warning labels, they're now covered with the label of 'WARNING: Smoking is AWESOME.'" 
+
+Understand "cigs" as cigarettes.
 
 Instead of taking blowtorch:
 	say "[If the player is carrying the cigarettes] Slow boss catch up go fast[end if].";
@@ -150,28 +159,32 @@ Check going east:
 The ashpile is a thing. The description is "Some ashes from your burning of those cigarrettes. You still have plenty of cigarrettes leftover though."
 
 Check using:
-	if the noun is cigarettes:
-		if the noun is blowtorch:
-			If the blowtorch is switched on:
-				say "You create a large plume of smoke, distracting your boss and masking your location temporarily. You can use this newfound time to escape to your west.";
-				move the ashpile to the player.;
-			if the blowtorch is off:
-				say "You need to turn actually turn on the blowtorch to burn things.".
+	if the player is in the main floor:
+		if the noun is cigarettes:
+			if the noun is blowtorch:
+				If the blowtorch is switched on:
+					say "You create a large plume of smoke, distracting your boss and masking your location temporarily. You can use this newfound time to escape to your west.";
+					move the ashpile to the player.;
+					change the blowtorch to off.;
+					say "You switch off the blowtorch.".;
+				if the blowtorch is off:
+					say "You need to turn actually turn on the blowtorch to burn things.".
 			
 Check going west:
-	if the player is not carrying the ashpile:
-		say "You can't head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.[if the player is carrying the cigarettes] Those cigarettes you picked up look like that could be useful…[end if]";
-	if the player is carrying the ashpile:
-		move Boss to the Main Floor;
-		say "You manage to get out of the Main floor before the boss catches up to you, thanks to the cloud of smoke you just created.";
-		move the player to the west Floor.
+	if the player is in the main floor:
+		if the player is not carrying the ashpile:
+			say "You can't head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.[if the player is carrying the cigarettes] Those cigarettes you picked up look like that could be useful…[end if]" instead.;
+		if the player is carrying the ashpile:
+			move Boss to the Main Floor;
+			say "You manage to get out of the Main floor before the boss catches up to you, thanks to the cloud of smoke you just created.";
+			move the player to the west Floor.
 		
 Check throwing:
 	if the noun is The Mop:
 		if the noun is the boss:
 			say "You valiantly throw your mop at your boss to have it fall several inches short. He just looks at you sort of confused. You'd better find a better way to distract your boss.".
 
-Understand "cigs" as cigarettes.
+
 
 [//////////MAIN FLOOR END//////////]
 
@@ -187,23 +200,35 @@ Things can be destroyed or prestine. Things are usually prestine.
 
 [//////////WEST FLOOR START//////////]
 
-The west floor is a room. It is west of the Main floor. [orly?]
+The west floor is a room. It is west of the Main floor. The description is "You are now located in the room adjacent to the main floor to the west. You have dubbed this room the West Floor. In here you can see some propane tanks and a cinderblock wall." [orly?]
 
 Some Propane tanks are scenery in the West floor. "Some propane tanks. It's actually a bit odd that we left them on the main working floor. Who knows what sort of explosive capability they have?"
 
-The cinderblock wall is scenery in the West Floor. It is prestine. The description is "[If the cinderblock wall is prestine] A cinderblock wall. Chances are it's not the strongest, it IS only made out cement or something anyways.[end if][if the cinderblock wall is destroyed] A gaping whole is all that remains of the wall that was once here.[end if]"
+The cinderblock wall is scenery in the West Floor. It is prestine. The description is "[If the cinderblock wall is prestine] A cinderblock wall. Chances are it's not the strongest, it IS only made out cement or something anyways.[end if][if the cinderblock wall is destroyed] A gaping whole is all that remains of the wall that was once here.[end if]".
 
 Check throwing:
-	if the noun is blowtorch:
-		if the noun is propane tanks:
-			if the blowtorch is switched on:
-				say "woooow look at it go booom, whoohooo";
-				change cinderblock wall to destroyed.;
-				remove the blowtorch from play.;
-				remove the propane tanks from play.;
-			If the blowtorch is off:
-				say "wat r u doin m8. throwing things around like a crazy person.".
+	if the player is in the west floor:
+		if the noun is blowtorch:
+			if the noun is propane tanks:
+				if the blowtorch is switched on:
+					say "Within seconds of the blowtorch reaching the tanks, they ignite and create a large explosion, destroying the wall.";
+					change cinderblock wall to destroyed.;
+					remove the blowtorch from play.;
+					remove the propane tanks from play.;
+				If the blowtorch is off:
+					say "wat r u doin m8. throwing things around like a crazy person.".
 				
+Check using:
+	if the player is in the west floor:
+		if the noun is propane tanks:
+			if the noun is blowtorch:
+				if the blowtorch is switched off:
+					say "Even if you had the blowtorch turned on, using it this close to the propane tanks would result in a fairly gruesome death. You should consider some way of igniting the tanks from further away.";
+				if the blowtorch is switched on:
+					say "Luckily for you, common sense kicks in and you somehow decide not to light the propane tanks right next to you. You should consider other ways of igniting the tank from further away.".;
+					change the blowtorch to off.;
+					say "You switch the blowtorch off to discourage yourself from trying that again.".
+
 The trail of cleaning supplies is scenery. The description is "some cleaning fluid. nice and flammable."
 
 Check pouring:

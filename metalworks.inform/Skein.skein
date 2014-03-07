@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x1bc76e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1bc76e0" />
+  <activeNode nodeId="node-0xcb6cfa0" />
   <item nodeId="node-0x1bc76e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 
-You wake up in a Janitor&apos;s closet after what you assume was a really long night. Not that you can remember it at all. You can barely remember anything, all you know is that you work in a steelmill and that you want to quit your job in style.
+You wake up in a Janitor&apos;s closet after what you assume was a really long night. Not that you can remember it at all. You can barely remember anything, actually. All you know is that you work in a steelmill and that you want to quit your job in style.
 
 metalworks
 An Interactive Fiction by Ty Suthard Hopefully i can get a teleport command in here eventually so it&apos;s easier to test this darn thing
@@ -23,430 +23,25 @@ A Janitor&apos;s closet, just roomy enough for a body to pass out comfortably in
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="35">NO</temporary>
+    <changed>NO</changed>
+    <temporary score="214">NO</temporary>
     <children>
       <child nodeId="node-0x1b045a0" />
       <child nodeId="node-0x1b046f0" />
       <child nodeId="node-0x1b04760" />
       <child nodeId="node-0x1b04840" />
+      <child nodeId="node-0x1e9b18e0" />
       <child nodeId="node-0x1b04a70" />
       <child nodeId="node-0x1b04d80" />
       <child nodeId="node-0x1b04fb0" />
-      <child nodeId="node-0x1b05090" />
       <child nodeId="node-0x1b05980" />
       <child nodeId="node-0x96c6460" />
       <child nodeId="node-0x1b05570" />
       <child nodeId="node-0xdae11f0" />
-      <child nodeId="node-0x1b055e0" />
       <child nodeId="node-0xda336b0" />
       <child nodeId="node-0x17653730" />
       <child nodeId="node-0x13688af0" />
-      <child nodeId="node-0x1bc7730" />
     </children>
-  </item>
-  <item nodeId="node-0x1bc7730">
-    <command xml:space="preserve">x shelf</command>
-    <result xml:space="preserve">A large handy shelf full of things. There are plenty of cleaning supplies here. 
-
-In the Shelf is a Cleaning Supplies.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x1bc7780" />
-      <child nodeId="node-0x1b05e50" />
-      <child nodeId="node-0x1b05730" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05730">
-    <command xml:space="preserve">Take cleaning supplies</command>
-    <result xml:space="preserve">You stick one bottle of the stuff into one of the bigger pockets in your cargo shorts.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="15">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b056c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b056c0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  a Cleaning Supplies
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="15">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05650" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05650">
-    <command xml:space="preserve">x door</command>
-    <result xml:space="preserve">You see nothing special about the Door to the Janitor&apos;s Closet Door.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="14">YES</temporary>
-  </item>
-  <item nodeId="node-0x1b05e50">
-    <command xml:space="preserve">Take key</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05df0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05df0">
-    <command xml:space="preserve">x shelf</command>
-    <result xml:space="preserve">A large handy shelf full of things. There are plenty of cleaning supplies here. 
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b058f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b058f0">
-    <command xml:space="preserve">r</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05880" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05880">
-    <command xml:space="preserve">restart</command>
-    <result xml:space="preserve">Are you sure you want to restart? </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05810" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05810">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">Please answer yes or no.&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b057a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b057a0">
-    <command xml:space="preserve">y</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="7">YES</temporary>
-  </item>
-  <item nodeId="node-0x1bc7780">
-    <command xml:space="preserve">take cleaning supplies</command>
-    <result xml:space="preserve">You stick one bottle of the stuff into one of the bigger pockets in your cargo shorts. The back of it has a label listing the chemicals it contains.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b06260" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b06260">
-    <command xml:space="preserve">x label</command>
-    <result xml:space="preserve">According to this white rectangle, this bottle of cleaning fluid contains a fair amount of ethanol. Your instincts from 8th Grade chemistry tell you that this is flammable.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b062b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b062b0">
-    <command xml:space="preserve">take mop</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b914d0" />
-      <child nodeId="node-0x1b06300" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b06300">
-    <command xml:space="preserve">open door</command>
-    <result xml:space="preserve">It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b06350" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b06350">
-    <command xml:space="preserve">x dor</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b06030" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b06030">
-    <command xml:space="preserve">x door</command>
-    <result xml:space="preserve">A pretty plain wooden door. It&apos;s locked, but it doesnt look that strong.  
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05fe0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05fe0">
-    <command xml:space="preserve">kick down door</command>
-    <result xml:space="preserve">You give a mighty kick towards the Door and it swings open wide for you, sending a few splinters your way. You can see a hallway to your south now.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05f90" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05f90">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Hallway
-A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
-
-You can see a Door to the Janitor&apos;s Closet here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05f40" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05f40">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Office
-You&apos;d be hard pressed to find an office room more standard than this. You can see a wheely chair, a trash bin, and a small filing cabinet, right next to the plain wooden desk.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05ed0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05ed0">
-    <command xml:space="preserve">x desk</command>
-    <result xml:space="preserve">A boring, wooden desk. There&apos;s literally nothing special about it, but there is a closed drawer.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05da0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05da0">
-    <command xml:space="preserve">open drawer</command>
-    <result xml:space="preserve">That&apos;s already open.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b063e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b063e0">
-    <command xml:space="preserve">x drawer</command>
-    <result xml:space="preserve">An equally boring drawer for the boring desk.
-
-In the drawer is a $20 bill.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05d30" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05d30">
-    <command xml:space="preserve">take bill</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05cc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05cc0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05c50" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05c50">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Hallway
-A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
-
-You can see a Door to the Janitor&apos;s Closet here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05be0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05be0">
-    <command xml:space="preserve">x sign</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05b70" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05b70">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Gear Room
-This gear room would be a lot like a locker room if there were any lockers. You can see a red button in the corner of the room next to a large steel door, and some metalworking clothes in another corner. There&apos;s a sign to the south next to the steel door.
-
-A heavy, sold steel door. Unlike the door for the janitor&apos;s closet, there&apos;s no way you&apos;ll be able to kick this one down.
-
-You can also see a button here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="44">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05b00" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05b00">
-    <command xml:space="preserve">press button</command>
-    <result xml:space="preserve">With a mighty tap, you depress the red button, such that it activates a mechanism, triggering a response in an electrical system, which in return activates the motors connected to the steel door, raising said door, revealing a passage to a catwalk to your south.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="43">YES</temporary>
-  </item>
-  <item nodeId="node-0x1b914d0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">why are you trying to walk into a wall
-(first opening the Door to the Janitor&apos;s Closet)
-It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x9606140" />
-    </children>
-  </item>
-  <item nodeId="node-0x9606140">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x96c9b50" />
-    </children>
-  </item>
-  <item nodeId="node-0x96c9b50">
-    <command xml:space="preserve">x door</command>
-    <result xml:space="preserve">A pretty plain wooden door. It&apos;s locked, but it doesnt look that strong.   That door was no match for you in the slightest.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0xcd69370" />
-    </children>
-  </item>
-  <item nodeId="node-0xcd69370">
-    <command xml:space="preserve">break down door</command>
-    <result xml:space="preserve">You give a mighty kick towards the Door and it swings open wide for you, sending a few splinters your way. You can see a hallway to your south now.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x11051af0" />
-    </children>
-  </item>
-  <item nodeId="node-0x11051af0">
-    <command xml:space="preserve">x splinters</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="9">YES</temporary>
   </item>
   <item nodeId="node-0x13688af0">
     <command xml:space="preserve">break down door</command>
@@ -530,11 +125,336 @@ You can also see a button here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="35">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
     <children>
       <child nodeId="node-0x11094000" />
+      <child nodeId="node-0xcb77b20" />
     </children>
+  </item>
+  <item nodeId="node-0xcb77b20">
+    <command xml:space="preserve">take supplies</command>
+    <result xml:space="preserve">You stick one bottle of the stuff into one of the bigger pockets in your cargo shorts. The back of it has a label listing the chemicals it contains.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e9e4a10" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e9e4a10">
+    <command xml:space="preserve">kick dor</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x110b7790" />
+    </children>
+  </item>
+  <item nodeId="node-0x110b7790">
+    <command xml:space="preserve">kick door</command>
+    <result xml:space="preserve">You give a mighty kick towards the Door and it swings open wide for you, sending a few splinters your way. You can see a hallway to your south now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e9673d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e9673d0">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x9304ce0" />
+    </children>
+  </item>
+  <item nodeId="node-0x9304ce0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Hallway
+A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x131e08f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x131e08f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Office
+You&apos;d be hard pressed to find an office room more standard than this. You can see a wheely chair, a trash bin, and a small filing cabinet, right next to the plain wooden desk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0xcb96100" />
+    </children>
+  </item>
+  <item nodeId="node-0xcb96100">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Hallway
+A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x935a5c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x935a5c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Gear Room
+This gear room would be a lot like a locker room if there were any lockers. You can see a red button in the corner of the room next to a large steel door, and some metalworking clothes in another corner. There&apos;s a sign to the south next to the steel door.
+
+…
+
+You can also see a button and some metalworking gear here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e9654a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e9654a0">
+    <command xml:space="preserve">take gear</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0xdaa8b00" />
+    </children>
+  </item>
+  <item nodeId="node-0xdaa8b00">
+    <command xml:space="preserve">press button</command>
+    <result xml:space="preserve">With a mighty tap, you depress the red button, such that it activates a mechanism, triggering a response in an electrical system, which in return activates the motors connected to the steel door, raising said door, revealing a passage to a catwalk to your south.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1102ac50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1102ac50">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Hallway
+A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x185bed0" />
+    </children>
+  </item>
+  <item nodeId="node-0x185bed0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Gear Room
+This gear room would be a lot like a locker room if there were any lockers. You can see a red button in the corner of the room next to a large steel door, and some metalworking clothes in another corner. There&apos;s a sign to the south next to the steel door.
+
+…
+
+You can also see a button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x176d0270" />
+    </children>
+  </item>
+  <item nodeId="node-0x176d0270">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Catwalk
+A large catwalk outside of the gear room. Unfortunately you can see your boss here, but you can also see an escape route to your west in the form of a stairwell.
+
+…
+
+…
+
+Oh crap, it&apos;s your boss. The last thing you want to do is get talked to by him. You&apos;d better get out of here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1100ff50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1100ff50">
+    <command xml:space="preserve">throw mop at boss</command>
+    <result xml:space="preserve">You lack the nerve when it comes to the crucial moment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0xda09fd0" />
+    </children>
+  </item>
+  <item nodeId="node-0xda09fd0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x180d590" />
+    </children>
+  </item>
+  <item nodeId="node-0x180d590">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+main floor
+The main metalworking floor. In here you can see a few things lying on the floor, in the form of a pack of cigarettes and a blowtorch. To your west is another part of the floor.
+
+…
+
+…
+
+…
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x17632b90" />
+    </children>
+  </item>
+  <item nodeId="node-0x17632b90">
+    <command xml:space="preserve">take cigs</command>
+    <result xml:space="preserve">.
+You pick up the cigarettes and stick one in your mouth, not that you&apos;d ever smoke it, you just figured you looked cooler that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1363b940" />
+    </children>
+  </item>
+  <item nodeId="node-0x1363b940">
+    <command xml:space="preserve">take blowtorch</command>
+    <result xml:space="preserve"> Slow boss catch up go fast.
+You come up with some creative ideas for a way to hold the tool, when you just decide to hold it in your hands
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x13182ea0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13182ea0">
+    <command xml:space="preserve">throw mop at boss</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x9334620" />
+    </children>
+  </item>
+  <item nodeId="node-0x9334620">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.
+ Those cigarettes you picked up look like that could be useful…
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x136752f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x136752f0">
+    <command xml:space="preserve">turn on blowtorch</command>
+    <result xml:space="preserve">You switch the blowtorch on.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x176d4970" />
+    </children>
+  </item>
+  <item nodeId="node-0x176d4970">
+    <command xml:space="preserve">light cigs</command>
+    <result xml:space="preserve">This dangerous act would achieve little.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x176af090" />
+    </children>
+  </item>
+  <item nodeId="node-0x176af090">
+    <command xml:space="preserve">light cigs with blowtorch</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0xcb6cfa0" />
+    </children>
+  </item>
+  <item nodeId="node-0xcb6cfa0">
+    <command xml:space="preserve">burn cigarettes with blowtorch</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="213">YES</temporary>
   </item>
   <item nodeId="node-0x11094000">
     <command xml:space="preserve">x mop</command>
@@ -545,23 +465,14 @@ You can also see a button here.
     <changed>YES</changed>
     <temporary score="34">YES</temporary>
   </item>
-  <item nodeId="node-0x1b055e0">
-    <command xml:space="preserve">x paper</command>
-    <result xml:space="preserve">Some crumpled paper. There&apos;s actually not much to say about this. It&apos;s not really that interesting.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
-  </item>
   <item nodeId="node-0xdae11f0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You take a few paces and trip over a mop in the corner.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="33">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="76">YES</temporary>
     <children>
       <child nodeId="node-0x13620400" />
     </children>
@@ -572,9 +483,10 @@ You can also see a button here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="33">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="76">YES</temporary>
     <children>
+      <child nodeId="node-0xdac50a0" />
       <child nodeId="node-0xda30e60" />
     </children>
   </item>
@@ -586,6 +498,516 @@ You can also see a button here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="32">YES</temporary>
+  </item>
+  <item nodeId="node-0xdac50a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You take a few confident steps, right into the shelf.
+
+You can&apos;t head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.
+
+You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x136119e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x136119e0">
+    <command xml:space="preserve">x mop</command>
+    <result xml:space="preserve">A mop, complete with the weird fuzzy end. You muse that &quot;it&apos;s like a water broom.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x193c1370" />
+    </children>
+  </item>
+  <item nodeId="node-0x193c1370">
+    <command xml:space="preserve">take mop</command>
+    <result xml:space="preserve">You try to be cool and use your shoelace to tie the mop around your back, like it was a battleaxe or something.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x136e8400" />
+    </children>
+  </item>
+  <item nodeId="node-0x136e8400">
+    <command xml:space="preserve">x papers</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0xdac76b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xdac76b0">
+    <command xml:space="preserve">x paper</command>
+    <result xml:space="preserve">Some crumpled paper. There&apos;s actually not much to say about this. It&apos;s not really that interesting.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x110ab8d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x110ab8d0">
+    <command xml:space="preserve">take paper</command>
+    <result xml:space="preserve">That&apos;s hardly portable.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b186d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b186d0">
+    <command xml:space="preserve">x shelf</command>
+    <result xml:space="preserve">A large handy shelf full of things. There are plenty of cleaning supplies here. 
+
+In the Shelf is a Cleaning Supplies.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x193cd830" />
+    </children>
+  </item>
+  <item nodeId="node-0x193cd830">
+    <command xml:space="preserve">x cleaning supplies</command>
+    <result xml:space="preserve"> A plethora of cleaning supplies. You pick a few up to look at them and notice that many of them contain ethanol. Maybe this could come in handy if you want to &quot;go out with a bang&quot; like you said.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x11039020" />
+    </children>
+  </item>
+  <item nodeId="node-0x11039020">
+    <command xml:space="preserve">take supplies</command>
+    <result xml:space="preserve">You stick one bottle of the stuff into one of the bigger pockets in your cargo shorts. The back of it has a label listing the chemicals it contains.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x176a7470" />
+    </children>
+  </item>
+  <item nodeId="node-0x176a7470">
+    <command xml:space="preserve">x label</command>
+    <result xml:space="preserve">According to this white rectangle, this bottle of cleaning fluid contains a fair amount of ethanol. Your instincts from 8th Grade chemistry tell you that this is flammable.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x176d46d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x176d46d0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Uh, the door&apos;s locked. Darn. Looks like you&apos;ll have to come up with more creative ways to get out of here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x1101a8f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1101a8f0">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">A pretty plain wooden door. It&apos;s locked, but it doesnt look that strong. That door was no match for you in the slightest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x193c95d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x193c95d0">
+    <command xml:space="preserve">tackle door</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x193adfa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x193adfa0">
+    <command xml:space="preserve">hit door</command>
+    <result xml:space="preserve">Violence isn&apos;t the answer to this one.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x176be870" />
+    </children>
+  </item>
+  <item nodeId="node-0x176be870">
+    <command xml:space="preserve">punch door</command>
+    <result xml:space="preserve">Violence isn&apos;t the answer to this one.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x17667d30" />
+    </children>
+  </item>
+  <item nodeId="node-0x17667d30">
+    <command xml:space="preserve">break door</command>
+    <result xml:space="preserve">Violence isn&apos;t the answer to this one.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x110ba150" />
+    </children>
+  </item>
+  <item nodeId="node-0x110ba150">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x110bf220" />
+    </children>
+  </item>
+  <item nodeId="node-0x110bf220">
+    <command xml:space="preserve">kick door</command>
+    <result xml:space="preserve">You give a mighty kick towards the Door and it swings open wide for you, sending a few splinters your way. You can see a hallway to your south now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x131d08f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x131d08f0">
+    <command xml:space="preserve">x splinters</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x110cc0e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x110cc0e0">
+    <command xml:space="preserve">x hallway</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x11027070" />
+    </children>
+  </item>
+  <item nodeId="node-0x11027070">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Hallway
+A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0xdaaf940" />
+    </children>
+  </item>
+  <item nodeId="node-0xdaaf940">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">This sign labels the metalworking gear room to your East. It is orange.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0xcb625c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xcb625c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Gear Room
+This gear room would be a lot like a locker room if there were any lockers. You can see a red button in the corner of the room next to a large steel door, and some metalworking clothes in another corner. There&apos;s a sign to the south next to the steel door.
+
+…
+
+You can also see a button and some metalworking gear here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x176ca4b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x176ca4b0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.
+
+Hallway
+A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x176d5170" />
+    </children>
+  </item>
+  <item nodeId="node-0x176d5170">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x93e9280" />
+    </children>
+  </item>
+  <item nodeId="node-0x93e9280">
+    <command xml:space="preserve">x office</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x110ee800" />
+    </children>
+  </item>
+  <item nodeId="node-0x110ee800">
+    <command xml:space="preserve">take sign</command>
+    <result xml:space="preserve">That&apos;s hardly portable.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x13110e60" />
+    </children>
+  </item>
+  <item nodeId="node-0x13110e60">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">This sign labels the metalworking gear room to your East. It is orange.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x1368c140" />
+    </children>
+  </item>
+  <item nodeId="node-0x1368c140">
+    <command xml:space="preserve">x orange</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x131e5ba0" />
+    </children>
+  </item>
+  <item nodeId="node-0x131e5ba0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Gear Room
+This gear room would be a lot like a locker room if there were any lockers. You can see a red button in the corner of the room next to a large steel door, and some metalworking clothes in another corner. There&apos;s a sign to the south next to the steel door.
+
+…
+
+You can also see a button and some metalworking gear here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x110b78a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x110b78a0">
+    <command xml:space="preserve">x red button</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x176e3c30" />
+    </children>
+  </item>
+  <item nodeId="node-0x176e3c30">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x131f98c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x131f98c0">
+    <command xml:space="preserve">x clothes</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x176df6d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x176df6d0">
+    <command xml:space="preserve">push button</command>
+    <result xml:space="preserve">With a mighty tap, you depress the red button, such that it activates a mechanism, triggering a response in an electrical system, which in return activates the motors connected to the steel door, raising said door, revealing a passage to a catwalk to your south.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x13688e30" />
+    </children>
+  </item>
+  <item nodeId="node-0x13688e30">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Catwalk
+A large catwalk outside of the gear room. Unfortunately you can see your boss here, but you can also see an escape route to your west in the form of a stairwell.
+
+…
+
+…
+
+Oh crap, it&apos;s your boss. The last thing you want to do is get talked to by him. You&apos;d better get out of here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b36920" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b36920">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You&apos;d rather get out of here than retreat into the gear room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x176c1810" />
+    </children>
+  </item>
+  <item nodeId="node-0x176c1810">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.
+
+main floor
+…
+
+…
+
+…
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x193ccd30" />
+    </children>
+  </item>
+  <item nodeId="node-0x193ccd30">
+    <command xml:space="preserve">x floor</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="76">YES</temporary>
+    <children>
+      <child nodeId="node-0x1101a260" />
+    </children>
+  </item>
+  <item nodeId="node-0x1101a260">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.
+
+west floor
+You are now located in the room adjacent to the main floor to the west. You have dubbed this room the West Floor. IN here you can see some propane tanks and a cinderblock wall.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
   </item>
   <item nodeId="node-0x1b05570">
     <command xml:space="preserve">test</command>
@@ -633,12 +1055,786 @@ You can also see a button here.
   </item>
   <item nodeId="node-0x96c6460">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Uh, it&apos;s locked. Darn. Looks like you&apos;ll have to come up with more creative ways to get out of here.
+    <result xml:space="preserve">Uh, the door&apos;s locked. Darn. Looks like you&apos;ll have to come up with more creative ways to get out of here.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="27">YES</temporary>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x13618f30" />
+    </children>
+  </item>
+  <item nodeId="node-0x13618f30">
+    <command xml:space="preserve">break down door</command>
+    <result xml:space="preserve">You give a mighty kick towards the Door and it swings open wide for you, sending a few splinters your way. You can see a hallway to your south now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x13643280" />
+    </children>
+  </item>
+  <item nodeId="node-0x13643280">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Hallway
+A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176f4fa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x176f4fa0">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">This sign labels the metalworking gear room to your East. It is orange.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x136e9980" />
+    </children>
+  </item>
+  <item nodeId="node-0x136e9980">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Gear Room
+This gear room would be a lot like a locker room if there were any lockers. You can see a red button in the corner of the room next to a large steel door, and some metalworking clothes in another corner. There&apos;s a sign to the south next to the steel door.
+
+…
+
+You can also see a button and some metalworking gear here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1362b160" />
+    </children>
+  </item>
+  <item nodeId="node-0x1362b160">
+    <command xml:space="preserve">take gear</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x110e3920" />
+    </children>
+  </item>
+  <item nodeId="node-0x110e3920">
+    <command xml:space="preserve">x gear</command>
+    <result xml:space="preserve">Some heavy duty metalworking clothes, capable of keeping you cool in temperatures up to 500 degress celsius.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0xcb565c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xcb565c0">
+    <command xml:space="preserve">x button</command>
+    <result xml:space="preserve">A big shiny red button next to the big steel door. I wonder what it does?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0xda12150" />
+    </children>
+  </item>
+  <item nodeId="node-0xda12150">
+    <command xml:space="preserve">press button</command>
+    <result xml:space="preserve">With a mighty tap, you depress the red button, such that it activates a mechanism, triggering a response in an electrical system, which in return activates the motors connected to the steel door, raising said door, revealing a passage to a catwalk to your south.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1768be50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1768be50">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x131d0280" />
+    </children>
+  </item>
+  <item nodeId="node-0x131d0280">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176cd350" />
+    </children>
+  </item>
+  <item nodeId="node-0x176cd350">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Hallway
+A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x13142900" />
+    </children>
+  </item>
+  <item nodeId="node-0x13142900">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Janitor&apos;s Closet
+A Janitor&apos;s closet, just roomy enough for a body to pass out comfortably in. In the corner is the usual mop, there are some crumpled papers scattered around, and there&apos;s a large shelf with what looks like lots of cleaning supplies. To your south you can see a door.
+
+...
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176d8030" />
+    </children>
+  </item>
+  <item nodeId="node-0x176d8030">
+    <command xml:space="preserve">take supplies</command>
+    <result xml:space="preserve">You stick one bottle of the stuff into one of the bigger pockets in your cargo shorts. The back of it has a label listing the chemicals it contains.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x136f3f90" />
+    </children>
+  </item>
+  <item nodeId="node-0x136f3f90">
+    <command xml:space="preserve">take mop</command>
+    <result xml:space="preserve">You try to be cool and use your shoelace to tie the mop around your back, like it was a battleaxe or something.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1365eb00" />
+    </children>
+  </item>
+  <item nodeId="node-0x1365eb00">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Hallway
+A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right.
+
+...
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1763e550" />
+    </children>
+  </item>
+  <item nodeId="node-0x1763e550">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Gear Room
+This gear room would be a lot like a locker room if there were any lockers. You can see a red button in the corner of the room next to a large steel door, and some metalworking clothes in another corner. There&apos;s a sign to the south next to the steel door.
+
+…
+
+You can also see a button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1310df70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1310df70">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Catwalk
+A large catwalk outside of the gear room. Unfortunately you can see your boss here, but you can also see an escape route to your west in the form of a stairwell.
+
+…
+
+…
+
+Oh crap, it&apos;s your boss. The last thing you want to do is get talked to by him. You&apos;d better get out of here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x13180f70" />
+    </children>
+  </item>
+  <item nodeId="node-0x13180f70">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+main floor
+The main metalworking floor. In here you can see a few things lying on the floor, in the form of a pack of cigarettes and a blowtorch. To your west is another part of the floor.
+
+…
+
+…
+
+…
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x136a7630" />
+    </children>
+  </item>
+  <item nodeId="node-0x136a7630">
+    <command xml:space="preserve">x pack</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176c9a60" />
+    </children>
+  </item>
+  <item nodeId="node-0x176c9a60">
+    <command xml:space="preserve">x pack of cigarettes</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x11024180" />
+    </children>
+  </item>
+  <item nodeId="node-0x11024180">
+    <command xml:space="preserve">x cigarettes</command>
+    <result xml:space="preserve">A pack of &quot;Marble&quot; cigarettes. Ever since they found the loophole in placing warning labels, they&apos;re now covered with the label of &quot;WARNING: Smoking is AWESOME.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0xcb5e750" />
+    </children>
+  </item>
+  <item nodeId="node-0xcb5e750">
+    <command xml:space="preserve">take cigarettes</command>
+    <result xml:space="preserve">.
+You pick up the cigarettes and stick one in your mouth, not that you&apos;d ever smoke it, you just figured you looked cooler that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e9a8690" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e9a8690">
+    <command xml:space="preserve">x cigs</command>
+    <result xml:space="preserve">A pack of &quot;Marble&quot; cigarettes. Ever since they found the loophole in placing warning labels, they&apos;re now covered with the label of &quot;WARNING: Smoking is AWESOME.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176a3b10" />
+    </children>
+  </item>
+  <item nodeId="node-0x176a3b10">
+    <command xml:space="preserve">x torch</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x93206f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x93206f0">
+    <command xml:space="preserve">x blowtorch</command>
+    <result xml:space="preserve">A blowtorch. It can be switched on and off by a valve near the nozzle.
+
+The blowtorch is currently switched off.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176ddb60" />
+    </children>
+  </item>
+  <item nodeId="node-0x176ddb60">
+    <command xml:space="preserve">eat blowtorch</command>
+    <result xml:space="preserve">(first taking the blowtorch)
+ Slow boss catch up go fast.
+You come up with some creative ideas for a way to hold the tool, when you just decide to hold it in your hands
+That&apos;s plainly inedible.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1850940" />
+    </children>
+  </item>
+  <item nodeId="node-0x1850940">
+    <command xml:space="preserve"> w</command>
+    <result xml:space="preserve">You can&apos;t head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.
+ Those cigarettes you picked up look like that could be useful…
+west floor
+You are now located in the room adjacent to the main floor to the west. You have dubbed this room the West Floor. IN here you can see some propane tanks and a cinderblock wall.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0xda18270" />
+    </children>
+  </item>
+  <item nodeId="node-0xda18270">
+    <command xml:space="preserve">x tanks</command>
+    <result xml:space="preserve">Some propane tanks. It&apos;s actually a bit odd that we left them on the main working floor. Who knows what sort of explosive capability they have?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bcf860" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bcf860">
+    <command xml:space="preserve">take tanks</command>
+    <result xml:space="preserve">They&apos;re hardly portable.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e93f190" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e93f190">
+    <command xml:space="preserve">x wall</command>
+    <result xml:space="preserve"> A cinderblock wall. Chances are it&apos;s not the strongest, it IS only made out cement or something anyways.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0xdab6710" />
+    </children>
+  </item>
+  <item nodeId="node-0xdab6710">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a blowtorch
+  some cigarettes
+  a Mop
+  a Label
+  a Cleaning Supplies
+  some metalworking gear
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176da140" />
+    </children>
+  </item>
+  <item nodeId="node-0x176da140">
+    <command xml:space="preserve">x mop</command>
+    <result xml:space="preserve">A mop, complete with the weird fuzzy end. You muse that &quot;it&apos;s like a water broom.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176d1f70" />
+    </children>
+  </item>
+  <item nodeId="node-0x176d1f70">
+    <command xml:space="preserve">x label</command>
+    <result xml:space="preserve">According to this white rectangle, this bottle of cleaning fluid contains a fair amount of ethanol. Your instincts from 8th Grade chemistry tell you that this is flammable.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x136faf40" />
+    </children>
+  </item>
+  <item nodeId="node-0x136faf40">
+    <command xml:space="preserve">wear gear</command>
+    <result xml:space="preserve">You can&apos;t wear those!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x13670200" />
+    </children>
+  </item>
+  <item nodeId="node-0x13670200">
+    <command xml:space="preserve">x gear</command>
+    <result xml:space="preserve">Some heavy duty metalworking clothes, capable of keeping you cool in temperatures up to 500 degress celsius.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x131c6ab0" />
+    </children>
+  </item>
+  <item nodeId="node-0x131c6ab0">
+    <command xml:space="preserve">wear gear</command>
+    <result xml:space="preserve">You can&apos;t wear those!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e93f470" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e93f470">
+    <command xml:space="preserve">equip gear</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e94c380" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e94c380">
+    <command xml:space="preserve">equip metalworking gear</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x131bafc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x131bafc0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+main floor
+The main metalworking floor. In here you can see a few things lying on the floor, in the form of a pack of cigarettes and a blowtorch. To your west is another part of the floor.
+
+…
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1100fd70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1100fd70">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Dude, your boss is literally climbing down the stairs to talk to you, do you actually want to talk to him?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176dab40" />
+    </children>
+  </item>
+  <item nodeId="node-0x176dab40">
+    <command xml:space="preserve">talk to boss</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x136648a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x136648a0">
+    <command xml:space="preserve">throw mop at boss</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176f99e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x176f99e0">
+    <command xml:space="preserve">throw mop</command>
+    <result xml:space="preserve">Dropped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e94bd20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e94bd20">
+    <command xml:space="preserve">take mop</command>
+    <result xml:space="preserve">You try to be cool and use your shoelace to tie the mop around your back, like it was a battleaxe or something.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176aee70" />
+    </children>
+  </item>
+  <item nodeId="node-0x176aee70">
+    <command xml:space="preserve">hit boss with mop</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0xdac5ad0" />
+    </children>
+  </item>
+  <item nodeId="node-0xdac5ad0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.
+ Those cigarettes you picked up look like that could be useful…
+west floor
+You are now located in the room adjacent to the main floor to the west. You have dubbed this room the West Floor. IN here you can see some propane tanks and a cinderblock wall.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x110da5f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x110da5f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Seriously, what is up with you and walking into walls
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x96419c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x96419c0">
+    <command xml:space="preserve">light propane tanks with blowtorch</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e9ac870" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e9ac870">
+    <command xml:space="preserve">turn blowtorch on</command>
+    <result xml:space="preserve">You switch the blowtorch on.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x93ece60" />
+    </children>
+  </item>
+  <item nodeId="node-0x93ece60">
+    <command xml:space="preserve">light tanks with blowtorch</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176e1130" />
+    </children>
+  </item>
+  <item nodeId="node-0x176e1130">
+    <command xml:space="preserve">light cigs with blowtorch</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176dde80" />
+    </children>
+  </item>
+  <item nodeId="node-0x176dde80">
+    <command xml:space="preserve">light mop with blowtorch</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e95f5b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e95f5b0">
+    <command xml:space="preserve">throw mop at boss</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176f6e10" />
+    </children>
+  </item>
+  <item nodeId="node-0x176f6e10">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+main floor
+The main metalworking floor. In here you can see a few things lying on the floor, in the form of a pack of cigarettes and a blowtorch. To your west is another part of the floor.
+
+…
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x960e260" />
+    </children>
+  </item>
+  <item nodeId="node-0x960e260">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Dude, your boss is literally climbing down the stairs to talk to you, do you actually want to talk to him?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e9460f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e9460f0">
+    <command xml:space="preserve">throw mop at boss</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x176adfd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x176adfd0">
+    <command xml:space="preserve">switch on blowtorch</command>
+    <result xml:space="preserve">That&apos;s already on.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e9bd040" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e9bd040">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t head west yet, not while in plain sight. You need to create a distraction somehow to get away from your boss.
+ Those cigarettes you picked up look like that could be useful…
+west floor
+You are now located in the room adjacent to the main floor to the west. You have dubbed this room the West Floor. IN here you can see some propane tanks and a cinderblock wall.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e999000" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e999000">
+    <command xml:space="preserve">throw blowtorch at propane tanks</command>
+    <result xml:space="preserve">Futile.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="139">YES</temporary>
   </item>
   <item nodeId="node-0x1b05980">
     <command xml:space="preserve">kick down door</command>
@@ -691,28 +1887,6 @@ You can see a Door to the Janitor&apos;s Closet here.
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="14">YES</temporary>
-  </item>
-  <item nodeId="node-0x1b05090">
-    <command xml:space="preserve">open door</command>
-    <result xml:space="preserve">It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="9">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05020" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b05020">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">(first opening the Door to the Janitor&apos;s Closet)
-It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
   </item>
   <item nodeId="node-0x1b04fb0">
     <command xml:space="preserve">turn</command>
@@ -930,41 +2104,7 @@ It&apos;s actually a bit strange that it&apos;s in here, you figured sooner or l
     <temporary score="19">YES</temporary>
     <children>
       <child nodeId="node-0xcd6b3d0" />
-      <child nodeId="node-0x1b04a00" />
     </children>
-  </item>
-  <item nodeId="node-0x1b04a00">
-    <command xml:space="preserve">open door</command>
-    <result xml:space="preserve">It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="7">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b04990" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b04990">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Hallway
-You can see a Door to the Janitor&apos;s Closet here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="7">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b04920" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b04920">
-    <command xml:space="preserve">restart</command>
-    <result xml:space="preserve">Are you sure you want to restart? </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="7">YES</temporary>
   </item>
   <item nodeId="node-0xcd6b3d0">
     <command xml:space="preserve">kick down door</command>
@@ -1069,17 +2209,60 @@ You can&apos;t go that way.
     <changed>YES</changed>
     <temporary score="18">YES</temporary>
   </item>
+  <item nodeId="node-0x1e9b18e0">
+    <command xml:space="preserve">replay</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="140">YES</temporary>
+  </item>
   <item nodeId="node-0x1b04840">
     <command xml:space="preserve">take cleaning supplies</command>
     <result xml:space="preserve">You stick one bottle of the stuff into one of the bigger pockets in your cargo shorts. The back of it has a label listing the chemicals it contains.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="80">YES</temporary>
     <children>
       <child nodeId="node-0x1b047d0" />
+      <child nodeId="node-0x176be820" />
     </children>
+  </item>
+  <item nodeId="node-0x176be820">
+    <command xml:space="preserve">break door</command>
+    <result xml:space="preserve">Violence isn&apos;t the answer to this one.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x13114fb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13114fb0">
+    <command xml:space="preserve">kick down door</command>
+    <result xml:space="preserve">You give a mighty kick towards the Door and it swings open wide for you, sending a few splinters your way. You can see a hallway to your south now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="80">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c90c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c90c0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You should take that metalworking gear before you leave here first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="79">YES</temporary>
   </item>
   <item nodeId="node-0x1b047d0">
     <command xml:space="preserve">x label</command>
@@ -1107,32 +2290,6 @@ You can&apos;t go that way.
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="11">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b04610" />
-      <child nodeId="node-0x1b04680" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b04680">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Janitor&apos;s Closet
-A Janitor&apos;s closet, just roomy enough for a body to pass out comfortably in. In the corner is the usual mop, there are some crumpled papers scattered around, and there&apos;s a large shelf with what looks like lots of cleaning supplies. To your south you can see a door.
-
-You can see a Door to the Janitor&apos;s Closet Door and a Mop here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-  </item>
-  <item nodeId="node-0x1b04610">
-    <command xml:space="preserve">x everything</command>
-    <result xml:space="preserve">(yourself)
-As good-looking as ever.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="7">YES</temporary>
   </item>
   <item nodeId="node-0x1b045a0">
     <command xml:space="preserve"></command>
