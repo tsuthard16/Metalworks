@@ -8,9 +8,11 @@
 
 
 
+You wake up in a Janitor&apos;s closet after what you assume was a really long night. Not that you can remember it at all. You can barely remember anything, all you know is that you work in a steelmill and that you want to quit your job in style.
+
 metalworks
 An Interactive Fiction by Ty Suthard Hopefully i can get a teleport command in here eventually so it&apos;s easier to test this darn thing
-Release 1 / Serial number 140306 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140307 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Janitor&apos;s Closet
 A Janitor&apos;s closet, just roomy enough for a body to pass out comfortably in. In the corner is the usual mop, there are some crumpled papers scattered around, and there&apos;s a large shelf with what looks like lots of cleaning supplies. To your south you can see a door.
@@ -21,8 +23,8 @@ A Janitor&apos;s closet, just roomy enough for a body to pass out comfortably in
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="25">NO</temporary>
+    <changed>YES</changed>
+    <temporary score="35">NO</temporary>
     <children>
       <child nodeId="node-0x1b045a0" />
       <child nodeId="node-0x1b046f0" />
@@ -35,7 +37,10 @@ A Janitor&apos;s closet, just roomy enough for a body to pass out comfortably in
       <child nodeId="node-0x1b05980" />
       <child nodeId="node-0x96c6460" />
       <child nodeId="node-0x1b05570" />
+      <child nodeId="node-0xdae11f0" />
       <child nodeId="node-0x1b055e0" />
+      <child nodeId="node-0xda336b0" />
+      <child nodeId="node-0x17653730" />
       <child nodeId="node-0x13688af0" />
       <child nodeId="node-0x1bc7730" />
     </children>
@@ -510,6 +515,36 @@ You can also see a button here.
     <changed>YES</changed>
     <temporary score="24">YES</temporary>
   </item>
+  <item nodeId="node-0x17653730">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You casually walk into the north wall.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="28">YES</temporary>
+  </item>
+  <item nodeId="node-0xda336b0">
+    <command xml:space="preserve">take mop</command>
+    <result xml:space="preserve">You try to be cool and use your shoelace to tie the mop around your back, like it was a battleaxe or something.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0x11094000" />
+    </children>
+  </item>
+  <item nodeId="node-0x11094000">
+    <command xml:space="preserve">x mop</command>
+    <result xml:space="preserve">A mop, complete with the weird fuzzy end. You muse that &quot;it&apos;s like a water broom.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+  </item>
   <item nodeId="node-0x1b055e0">
     <command xml:space="preserve">x paper</command>
     <result xml:space="preserve">Some crumpled paper. There&apos;s actually not much to say about this. It&apos;s not really that interesting.
@@ -518,6 +553,39 @@ You can also see a button here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="8">YES</temporary>
+  </item>
+  <item nodeId="node-0xdae11f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You take a few paces and trip over a mop in the corner.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x13620400" />
+    </children>
+  </item>
+  <item nodeId="node-0x13620400">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You casually walk into the wall.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0xda30e60" />
+    </children>
+  </item>
+  <item nodeId="node-0xda30e60">
+    <command xml:space="preserve">take mop</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
   </item>
   <item nodeId="node-0x1b05570">
     <command xml:space="preserve">test</command>
@@ -565,13 +633,12 @@ You can also see a button here.
   </item>
   <item nodeId="node-0x96c6460">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">(first opening the Door to the Janitor&apos;s Closet)
-It seems to be locked.
+    <result xml:space="preserve">Uh, it&apos;s locked. Darn. Looks like you&apos;ll have to come up with more creative ways to get out of here.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="19">YES</temporary>
+    <temporary score="27">YES</temporary>
   </item>
   <item nodeId="node-0x1b05980">
     <command xml:space="preserve">kick down door</command>
@@ -898,15 +965,6 @@ You can see a Door to the Janitor&apos;s Closet here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="7">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b048b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b048b0">
-    <command xml:space="preserve">y</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="6">YES</temporary>
   </item>
   <item nodeId="node-0xcd6b3d0">
     <command xml:space="preserve">kick down door</command>

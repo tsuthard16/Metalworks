@@ -2,6 +2,7 @@
 [//////////DEBUG COMMANDS//////////]
 Hopefully i can get a teleport command in here eventually so it's easier to test this darn thing.
 
+When play begins: say "You wake up in a Janitor's closet after what you assume was a really long night. Not that you can remember it at all. You can barely remember anything, actually. All you know is that you work in a steelmill and that you want to quit your job in style.".
 [//////////CUSTOM ACTIONS//////////]
 
 Kicking is an action applying to one thing.
@@ -27,12 +28,39 @@ Instead of taking the Cleaning Supplies:
 	say "You stick one bottle of the stuff into one of the bigger pockets in your cargo shorts. The back of it has a label listing the chemicals it contains.";
 	move Cleaning Supplies to the player.;
 	move The label to the player.
+	
+Instead of taking the mop:
+	say "You try to be cool and use your shoelace to tie the mop around your back, like it was a battleaxe or something.";
+	move the mop to the player.
 
 The Door to the Janitor's Closet is a closed lockable door. "..." It is locked and lockable. The Door to the Janitor's Closet is south of the Janitor's Closet and north of the Hallway. The description is "A pretty plain wooden door. [if the door is closed]It's locked, but it doesnt look that strong.[end if][if the door is open] That door was no match for you in the slightest.[end if]"
 
 After kicking the Door to the Janitor's Closet:
 	now the Door to the Janitor's Closet is open.;
 	say "You give a mighty kick towards the Door and it swings open wide for you, sending a few splinters your way. You can see a hallway to your south now."
+	
+Check going south:
+	if the player is in the Janitor's Closet:
+		if the Door to the Janitor's Closet is closed:
+			say "Uh, the door's locked. Darn. Looks like you'll have to come up with more creative ways to get out of here." instead.
+			
+Check going north: 
+	if the player is in the Janitor's Closet:
+		say "You casually walk into the wall." instead.
+		
+Check going east:
+	if the player is in the Janitor's Closet:
+		if the player is not carrying the mop:
+			say "You take a few paces and trip over a mop in the corner." instead.;
+		if the player is carrying the mop:
+			say "After a few steps you trip over your own feet." instead.
+		
+Check going west:
+	if the player is in the Janitor's Closet:
+		say "You take a few confident steps, right into the shelf."
+		
+
+
 
 [////////////////////////////////////////END JANITOR'S CLOSET//////////////////////////////////////]
 [////////////////////////////////////////HALLWAY START///////////////////////////////////////////]
@@ -40,6 +68,7 @@ After kicking the Door to the Janitor's Closet:
 	
 The Hallway is a room. It is south of the Janitor's Closet Door. The description is "A pretty boring hallway. You can see a window peering into an office to the west and a sign on the right."
 
+The sign is scenery in the Hallway. The description is "This sign labels the metalworking gear room to your East. It is orange."
 
 [//////////////////////////////////////////OFFICE START////////////////////////////////////////////]
 
@@ -250,7 +279,7 @@ Instead of talking to the Crane Operator:
 	…….
 	not really though, keep playing."
 
-Some Crane Controls are scenery in the Crane Catwalk. The description is "It looks like these levers and buttons and whatnot control the huge flaming metal bucket full of molten steel."
+Some Crane Controls are scenery in the Crane Catwalk. The description is "It looks like these levers and buttons and whatnot control crane carrying the huge flaming metal bucket full of molten steel."
 
 The Huge flaming bucket full of molten steel is scenery in the Crane Catwalk. The description is "WOW. You can actually feel the heat from here. The bucket is actually low enough so that you can see a window at the end of its crane pathway."
 
