@@ -10,6 +10,7 @@ Understand "kick down [something]" as kicking.
 Understand "break down [something]" as kicking.
 Understand "punch [something]" as kicking.
 Understand "break [something]" as kicking.
+Understand "bash down [something]" as kicking.
 
 [//////////JANITOR'S CLOSET//////////]
 
@@ -26,6 +27,9 @@ Instead of taking the crumpled paper:
 The Shelf is scenery in the Janitor's Closet. It is an open openable container. It is unlocked and lockable. The description is "A large handy shelf full of things. There are plenty of cleaning supplies here. "
 
 The Mop is scenery in the janitor's closet. The description is "A mop, complete with the weird fuzzy end. You muse that 'it's like a water broom.'".
+
+Instead of taking the mop:
+	say "While I'm certain that you think you'd look cool if you waved around a mop, there's no real reason for you to take it with you.".
 
 The Cleaning Supplies is in the Shelf. The description is "[if the Cleaning Supplies is in the Shelf] A plethora of cleaning supplies. You pick a few up to look at them and notice that many of them contain ethanol. Maybe this could come in handy if you want to 'go out with a bang' like you said.[end if][If the player is carrying the Cleaning Supplies] To any normal janitor this would be simple bottle of blue cleaning fluid, but in your eyes, you see lighter fluid! This ought to provide some pretty nice flames. The label on the back says the bottle contains lots of ethanol, a flammable molecule.[end if]"
 
@@ -116,7 +120,7 @@ Understand "20 dollars" as the $20 bill.
 The trash bin is scenery in the Office. The description is "A standard metal trash can with some crumpled papers inside. Not a whole lot going on here.".
 
 After examining the trash bin:
-	move the crumpled paper to the office.
+	move the crumpled paper to the office. [cheeky way of not making a new description for an item]
 	
 [//////////OFFICE END//////////]
 
@@ -133,16 +137,19 @@ Instead of pushing the button:
 	now the steel door is open.
 	
 Understand "red button" as button.
-	
+
+
 Some metalworking gear are a thing in the Gear Room. ">". The Metalworking Gear can be worn. The description is "Some heavy duty metalworking clothes, capable of keeping you cool in temperatures up to 500 degress celsius."
 
 Understand "clothes" as metalworking gear.
 
 Instead of taking the metalworking gear:
 	move the metalworking gear to the player.;
-	say "Since you don't exactly have any means of carrying these bulky clothes, you decide to put them on instead." instead.
+	say "Since you don't exactly have any means of carrying these bulky clothes, you decide to put them on instead." instead. [couldnt get wearing clothes to work, this will have to do B)]
 	
 	
+
+
 Check going south:
 	if the player is in the gear room:
 		if the steel door is open:
@@ -183,6 +190,9 @@ After examining the boss:
 		say "You see your boss stumbling through the debris trying to catch up to you. He looks like he's having some trouble." instead.;
 	if the player is in the metal bucket:
 		say "You can see your boss staring at you, his jaw dropped, mouthing the words 'Get down from there'. You think nothing of it." instead.
+		[this was supposed to work, but it didn't boo hoo. if i have more time at some point, i might make it so that you can see him between rooms]
+
+
 [//////////CATWALK END//////////]
 
 [//////////MAIN FLOOR PUZZLES//////////]
@@ -191,10 +201,10 @@ Firing is an action applying to two things.
 Understand "burn [something] with [something]" as firing.
 Understand "light [something] with [something]" as firing.
 Understand "torch [something] with [something]" as firing.
-Understand "light [something]" as firing.
+Understand "light [something]" as firing. [because burning was taken]
 
 Using is an action applying to one thing.
-Understand "use [something]" as using.
+Understand "use [something]" as using. [because this isnt a default command for some reason]
 
 [//////////MAIN FLOOR START//////////]
 
@@ -235,16 +245,16 @@ Check firing:
 				If the blowtorch is switched on:
 					say "You create a large plume of smoke, distracting your boss and masking your location temporarily. You can use this newfound time to escape to your west.";
 					move the ashpile to the player.;
-					change the blowtorch to off.;
+					change the blowtorch to off.; [combining two items with an action to create smoke]
 					
-			
+		
 
 Check firing:
 	if the player is in the Main Floor:
 		if the noun is the cigarettes:
 			if the second noun is the blowtorch:
 				if the blowtorch is switched off:
-					say "You, uh, need to switch on the blowtorch to burn things.".
+					say "You, uh, need to switch on the blowtorch to burn things.". [more condescending responses!]
 			
 Check going west:
 	if the player is in the Main Floor:
@@ -253,7 +263,7 @@ Check going west:
 		if the player is carrying the ashpile:
 			move Boss to the Main Floor;
 			say "You manage to get out of the Main floor before the boss catches up to you, thanks to the cloud of smoke you just created."
-			
+			[ashpile is essentially an unobtainable key, until after you use the cigs and the torch, which lets you go west]
 
 
 
@@ -270,7 +280,7 @@ Understand "toss [something] at [something]" as throwing.
 
 Things can be destroyed or prestine. Things are usually prestine.
 
-Thinking about is an action applying to one thing.
+Thinking about is an action applying to one thing. [this command was fun to play with]
 Understand "think about [something]" as thinking about.
 Understand "ponder [something]" as thinking about.
 
@@ -297,14 +307,16 @@ Check throwing:
 					remove the propane tanks from play.;
 				If the blowtorch is off:
 					say "You decide to throw around your blowtorch while it's turned off. Uh, alright. Are you feeling OK?".
-				
+				[after this, the player can leave the west floor and go south.]
+
+
 Check dropping:
 	if the noun is the blowtorch:
 		say "Did you mean to throw this at something?" instead.
 
 Check firing:
 	if the player is in the west floor:
-		if the noun is propane tanks:
+		if the noun is propane tanks: [if statements B)]
 			if the second noun is blowtorch:
 				if the cinderblock wall is prestine:
 					if the blowtorch is switched off:
@@ -314,7 +326,7 @@ Check firing:
 						change the blowtorch to off.;
 						say "You should discourage yourself from trying that again.".;
 				if the cinderblock wall is destroyed:
-					say "What propane tanks?".
+					say "What propane tanks?". [me being paranoid about people examing or trying to do the same command twice. i dont see why you would, but whatever.]
 
 The trail of cleaning supplies is scenery. The description is "The trail of cleaning supplies you poured on the ground. If you ignite it, it should blow up those propane tanks.".
 
@@ -336,8 +348,8 @@ Check firing:
 				remove the trail of cleaning supplies from play.;
 				say "The trail of cleaning supplies burns and leads up to the propane tanks, like a fuse of sorts. They propane tanks eventually ignite, and blast a gaping hole in the cinderblock wall, leading to another room directly south.".;
 			if the blowtorch is switched off:
-				say "This isn't going to accomplish much with the blowtorch switched off.".
-
+				say "This isn't going to accomplish much with the blowtorch switched off.". [second way of solving the same puzzle]
+			
 Instead of burning the trail of cleaning supplies:
 	say "Did you mean to light the trail of cleaning supplies with something?".
 	
@@ -387,7 +399,7 @@ Check thinking about:
 			if the player is not carrying the ashpile:
 				say "This thing makes fire… Where there is fire, there is…";
 			if the player is carrying the ashpile:
-				say "You mentally pat yourself on the back for being such a genius.".
+				say "You mentally pat yourself on the back for being such a genius.". [this looks complicated, but it's not. i promise. its just different responses for 'think about x' in different places]
 
 Check thinking about:
 	if the player is not in the main floor:
@@ -461,13 +473,13 @@ Instead of giving the cigarettes to the crane operator:
 	say "The crane operator takes your cigs and looks pretty happy now. He's too busy smoking to prevent you messing with his stuff at this point.";
 	change the mood of the crane operator to chill.;
 	remove the cigarettes from play;
-	change the description of the crane operator to "It's the crane operator. He looks pretty chill now that you've given him those cigarettes you found on the floor.".	
+	change the description of the crane operator to "It's the crane operator. He looks pretty chill now that you've given him those cigarettes you found on the floor.". [i give credit for this piece of code to room a-221 tutorial]
 
 Instead of giving the $20 bill to the crane operator:
 	say "The crane operator graciously takes your money out of your hands and looks pretty happy now. He agrees to let you use the crane controls.";
 	change the mood of the crane operator to chill.;
 	remove the $20 bill from play;
-	change the description of the crane operator to "It's the crane operator. He giggling like a schoolgirl now that he's got that $20 bill in his hands.".
+	change the description of the crane operator to "It's the crane operator. He giggling like a schoolgirl now that he's got that $20 bill in his hands.". [i remove the $20 bill, but for no real reason]
 	
 After using the crane controls:
 	say "Now, there's only one logical course of action. You need to jump on the steel bucket to escape.".
@@ -494,6 +506,23 @@ Check diving:
 Check going east:
 	if the player is in the crane catwalk:
 		say "You can't exactly go that way, but you can look at the crane controls and the bucket here." instead.
+		
+Check going west:
+	if the player is in the crane catwalk:
+		say "You walk up to the crane operator, who is also on the crane catwalk." instead.
+		
+Check going south:
+	if the player is in the crane catwalk:
+		say "You nearly walk off the side of the catwalk before the railing stops you in your tracks." instead.
+		
+Check going north:
+	if the player is in the crane catwalk:
+		say "Stop trying to go closer to your boss! You're almost out of here, anyways." instead.
+		[since there are like, a million 'check' sequences, I'll give the credi to devon, he was the biggest help out of any resource i could find]
+		
+The railing is scenery in the crane catwalk. The description is "Metal railing, prevent lemmings from suicide since whenever.".
+
+Understand "guard rail" as railing.
 
 [//////////END CRANE CATWALK//////////]
 
@@ -505,7 +534,7 @@ The dumpster is a room. "A wonderful dumpster. It looks like you successfully ma
 
 The rat is a thing in the dumpster. "Oh look, a rat.". The description is "A rat. He seems pretty content with you sitting there. He probably wouldn't mind to much if you picked him up actually."
 
-Understand "pick up [something]" as taking.
+Understand "pick up [something]" as taking. [this is somehow not a default synonym in inform]
 
 After taking rat:
 	say "'Squeak'" instead.;
@@ -516,5 +545,8 @@ Use no scoring.
 An every turn rule:
 if the player is carrying the rat,
 end the game in victory.
+
+[im done writing comments i want nothing to do with this game anymore.]
+
 
 
